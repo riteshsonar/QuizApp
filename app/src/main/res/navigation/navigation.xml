@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.quizapp.UI.HomeFragment"
+        android:label="fl"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.quizapp.UI.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quizFragment_to_quizWonFragment"
+            app:destination="@id/quizWonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizWonFragment"
+        android:name="com.example.quizapp.UI.QuizWonFragment"
+        android:label="fragment_quiz_won"
+        tools:layout="@layout/fragment_quiz_won" >
+        <action
+            android:id="@+id/action_quizWonFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_quizWonFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizOverFragment"
+        android:name="com.example.quizapp.UI.QuizOverFragment"
+        android:label="fragment_quiz_over"
+        tools:layout="@layout/fragment_quiz_over" >
+        <action
+            android:id="@+id/action_quizOverFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>

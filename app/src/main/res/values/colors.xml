@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="demo_state_foreground_color">#0d6e42</color>
+    <color name="demo_state_second">#7ab629</color>
+    <color name="demo_state_third">#33a873</color>
+    <color name="demo_state_fourth">#48966c</color>
+    <color name="grey_dark">#696969</color>
+    <color name="light_green">#78d57d</color>
+
+    <color name="primaryColor">#1976d2</color>
+    <color name="primaryDarkColor">#1976d2</color>
+    <color name="accentColor">#1976d2</color>
+    <color name="primaryTextColor">#FFFFFF</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="iconColor">#1976d2</color>
+    <color name="quizBgRight">#B32DAB32</color>
+    <color name="quizBgWrong">#B3FF0000</color>
+    <color name="editTextColor">@color/primaryColor</color>
+
+</resources>
