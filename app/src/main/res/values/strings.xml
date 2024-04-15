@@ -2,4 +2,25 @@
     <string name="app_name">QuizApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rules_one">1. Select the answer from the options given.</string>
+    <string name="rules_two">2. Each time you get an answer correct, you advance to the next flag.</string>
+    <string name="rules_three">3. If you get 3 answers wrong, your quiz ends!</string>
+    <string name="rules_four">4. You can return to the home screen using up or back from within the quiz screen, and this will also end your quiz.</string>
+    <string name="rules_how_to_play">How to play?</string>
+    <string name="quiz_you_won">You Won!</string>
+    <string name="welcome_skip">Skip</string>
+    <string name="quiz_play_again">Play Again</string>
+    <string name="quiz_btn_finish">Finish</string>
+    <string name="quiz_btn_submit">Submit</string>
+    <string name="quiz_btn_next_flag">Next Flag</string>
+    <string name="quiz_congrats">Congratulations %1$s!</string>
+    <string name="quiz_trophy_content">Trophy Image</string>
+    <string name="quiz_score">Your score is %1$d out of %2$d.</string>
+    <string name="welcome_btn_continue">Continue</string>
+    <string name="quiz_sad_face_content">Sad Emoji You Lose</string>
+    <string name="quiz_try_again">Try Again</string>
+    <string name="quiz_you_lose">You Lose!</string>
+    <string name="quiz_sorry_lose">Sorry %1$s you lose!</string>
+    <string name="quiz_heart_content">Heart Icon.</string>
+
 </resources>
