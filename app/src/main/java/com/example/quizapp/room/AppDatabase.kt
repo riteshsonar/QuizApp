@@ -20,7 +20,7 @@ abstract class AppDatabase : RoomDatabase() {
                 instance = Room.databaseBuilder(ctx.applicationContext,AppDatabase::class.java,"Quiz_database")
                     .fallbackToDestructiveMigration()
                     .build()
-                return instance!!
+                return instance as AppDatabase
         }
     }
 

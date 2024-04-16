@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+        android:name=".Utils"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -19,10 +20,10 @@
             android:name=".UI.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".UI.LoginActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".UI.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

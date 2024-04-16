@@ -22,5 +22,6 @@
     <string name="quiz_you_lose">You Lose!</string>
     <string name="quiz_sorry_lose">Sorry %1$s you lose!</string>
     <string name="quiz_heart_content">Heart Icon.</string>
+    <string name="quiz_progress" translatable="false">%1$d/%2$d</string>
 
 </resources>

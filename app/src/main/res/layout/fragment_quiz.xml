@@ -7,11 +7,13 @@
     tools:context=".UI.QuizFragment">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
         android:paddingStart="16dp"
         android:paddingTop="8dp"
         android:paddingEnd="8dp"
@@ -70,7 +72,86 @@
             app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="5/10" />
+            tools:text="2/5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_40_dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="@dimen/dp_4"
+            android:text="Two angles are complementary, if the sum of their measures is"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvAnswerOne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="spread" />
+        <TextView
+            android:id="@+id/tvAnswerOne"
+            style="@style/QuizAnswer"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvAnswerTwo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuestion"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="-90" />
+        <TextView
+            android:id="@+id/tvAnswerTwo"
+            style="@style/QuizAnswer"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvAnswerThree"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAnswerOne"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="-10" />
+        <TextView
+            android:id="@+id/tvAnswerThree"
+            style="@style/QuizAnswer"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvAnswerFour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAnswerTwo"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="-180" />
+        <TextView
+            android:id="@+id/tvAnswerFour"
+            style="@style/QuizAnswer"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAnswerThree"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="-360" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/Button"
+            android:layout_marginTop="16dp"
+            android:text="@string/quiz_btn_submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAnswerFour" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

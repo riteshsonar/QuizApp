@@ -40,11 +40,19 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    override fun onPause() {
+        super.onPause()
+    }
+    override fun onResume() {
+        super.onResume()
+    }
     private fun callLoginAPi() {
         binding.progressLayout.visibility = View.VISIBLE
             Intent(this,MainActivity::class.java).apply{
                 startActivity(this)
             }
+        binding.progressLayout.visibility = View.GONE
+
 
     }
 

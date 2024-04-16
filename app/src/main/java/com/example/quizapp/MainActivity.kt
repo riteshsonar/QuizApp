@@ -9,7 +9,6 @@ import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.quizapp.databinding.ActivityMainBinding
-import com.example.quizapp.room.AppDatabase
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,21 +23,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setUpNavigation()
         //AppDatabase.getInstance(this@MainActivity).QuizDao
-        //findNavController(R.id.navHostFragment).navigate(R.id.navigation)
+        findNavController(R.id.navHostFragment).navigate(R.id.navigation)
 
     }
 
-
-    override fun onSupportNavigateUp() = navigateUp(
-        findNavController(R.id.navHostFragment), binding.drawerLayout
-    )
-
     private fun setUpNavigation() {
-        setSupportActionBar(binding.toolbar)
+        //setSupportActionBar(binding.toolbar)
         navController = findNavController(R.id.navHostFragment)
 
 
-        setupActionBarWithNavController(navController, binding.drawerLayout)
-        binding.navigationView.setupWithNavController(navController)
+        //setupActionBarWithNavController(navController, binding.drawerLayout)
+        //binding.navigationView.setupWithNavController(navController)
     }
 }
